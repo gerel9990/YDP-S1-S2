@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #f9f9f9;
+            color: #1b7135;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            margin: 15px 0;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            overflow-x: auto;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         th, td {
             border: 1px solid #ddd;
@@ -20,14 +30,29 @@
             text-align: left;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #1b5c36;
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #eaf1f8;
         }
         td input[type="number"] {
             width: 100%;
             padding: 8px;
             font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
-        @media screen and (max-width: 400px) {
+        td input[type="number"]:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 4px rgba(219, 158, 52, 0.8);
+        }
+        @media screen and (max-width: 500px) {
             table {
                 display: block;
                 overflow-x: scroll;
@@ -42,8 +67,27 @@
                 padding: 6px;
             }
         }
-        .result {
+        .result-button {
+            display: inline-block;
             margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #d08c0f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .result-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        .result-button:active {
+            background-color: #c89122;
+            transform: translateY(1px);
         }
     </style>
 </head>
@@ -264,7 +308,7 @@
 
             </tbody>
         </table>
-        <button type="submit">Үр дүн</button>
+        <button type="submit" class="result-button">Үр дүн</button>
     </form>
 
     <script>
