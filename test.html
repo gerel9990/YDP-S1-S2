@@ -339,31 +339,38 @@
         
 
             const descriptions = {
-                O: `• Openness to Experience (O) – <b>Нээлттэй хэв шинж</b> 
+                O: `• Openness to Experience (O) – <b>Нээлттэй хэв шинж</b> <br>
                 Шинэ туршлага, оюуны эрэл хайгуул хийдэг төрлийн зан чанар юм. Өндөр оноо авсан хүмүүс нь илүү мөрөөдөмтгийг илэрхийлнэ. Бага оноо авсан хүмүүс илүү бодитоор сэтгэх хандлагатай байдаг.`,
-                C: `• Conscientiousness (C) – <b>Хариуцлагатай зарчимч хэв шинж</b>
+                C: `• Conscientiousness (C) – <b>Хариуцлагатай зарчимч хэв шинж</b> <br>
                 Шударга, ажилсаг хүний ​​зан чанар юм. Өндөр оноо авсан хүмүүс дүрэм журмыг дагаж мөрдөж, зохион байгуулалтыг илүүд үздэг. Бага оноо авсан хүмүүс заримдаа замбараагүй байж, бусдад худал хэлж болзошгүй.`,
-                E: `• Extroversion (E) - <b>Гадагшаа чиглэсэн, идэвхтэй хэв шинж</b>
+                E: `• Extroversion (E) - <b>Гадагшаа чиглэсэн, идэвхтэй хэв шинж</b> <br>
                 Өөрөөсөө гадна буюу хамт олны дунд байхаас сэтгэл ханамжийг эрэлхийлдэг төрлийн зан чанар юм. Өндөр оноо авсан хүмүүс нийтэч байх хандлагатай байдаг бол бага оноо авсан хүмүүс ганцаараа ажиллахыг илүүд үздэг.`,
-                A: `• Agreeableness (A) – <b>Хүлцэнгүй хэв шинж</b>
+                A: `• Agreeableness (A) – <b>Хүлцэнгүй хэв шинж</b> <br>
                 Өөрсдийн зан төлөвийг бусдад нийцүүлэн өөрчлөхийг илэрхийлнэ. Өндөр оноо авсан хүмүүс ихэвчлэн эелдэг хүмүүс байдаг. Бага оноо авсан хүмүүс аливааг "байгаагаар нь хэлэх" хандлагатай байдаг.`,
-                N: `• Neuroticism (N) – <b>Тогтворгүй хэв шинж</b>
+                N: `• Neuroticism (N) – <b>Тогтворгүй хэв шинж</b> <br>
                 Сэтгэл хөдлөлийн шинж чанартай холбоотой байдлыг илэрхийлнэ.`,
                  };
 
             const resultWindow = window.open("", "_blank");
         resultWindow.document.write(`
-            <h1>Test Results</h1>
-             <p><strong>Openness to Experience (O):</strong> ${O}</p>
-            <p>${descriptions.O}</p>
-            <p><strong>Conscientiousness (C):</strong> ${C}</p>
-            <p>${descriptions.C}</p>
-            <p><strong>Extroversion (E):</strong> ${E}</p>
-            <p>${descriptions.E}</p>
-            <p><strong>Agreeableness (A):</strong> ${A}</p>
-            <p>${descriptions.A}</p>
-            <p><strong>Neuroticism (N):</strong> ${N}</p>
-            <p>${descriptions.N}</p>
+             <html>
+    <head>
+        <title>Test Results</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
+        <h1 style="color: #2c3e50;">Test Results</h1>
+        <p style="color: #278c38;"><strong>Openness to Experience (O):</strong> ${O}</p>
+        <p style="color: #c07d42;">${descriptions.O}</p>
+        <p style="color: #e74c3c;"><strong>Conscientiousness (C):</strong> ${C}</p>
+        <p style="color: #c0392b;">${descriptions.C}</p>
+        <p style="color: #9b59b6;"><strong>Extroversion (E):</strong> ${E}</p>
+        <p style="color: #8e44ad;">${descriptions.E}</p>
+        <p style="color: #1abc9c;"><strong>Agreeableness (A):</strong> ${A}</p>
+        <p style="color: #16a085;">${descriptions.A}</p>
+        <p style="color: #f1c40f;"><strong>Neuroticism (N):</strong> ${N}</p>
+        <p style="color: #f39c12;">${descriptions.N}</p>
+    </body>
+    </html>   
         `);
         });
     </script>
