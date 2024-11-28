@@ -354,17 +354,17 @@
 
             const resultWindow = window.open("", "_blank");
         resultWindow.document.write(`
-            <h1>Test Results</h1>
-             <p><strong>Openness to Experience (O):</strong> ${O}</p>
-            <p>${descriptions.O}</p>
-            <p><strong>Conscientiousness (C):</strong> ${C}</p>
-            <p>${descriptions.C}</p>
-            <p><strong>Extroversion (E):</strong> ${E}</p>
-            <p>${descriptions.E}</p>
-            <p><strong>Agreeableness (A):</strong> ${A}</p>
-            <p>${descriptions.A}</p>
-            <p><strong>Neuroticism (N):</strong> ${N}</p>
-            <p>${descriptions.N}</p>
+              <h1 style="color: #2c3e50;">Test Results</h1>
+        <p style="color: #278c38;"><strong>Openness to Experience (O):</strong> ${O}</p>
+        <p style="color: #c07d42;">${descriptions.O}</p>
+        <p style="color: #e74c3c;"><strong>Conscientiousness (C):</strong> ${C}</p>
+        <p style="color: #c0392b;">${descriptions.C}</p>
+        <p style="color: #9b59b6;"><strong>Extroversion (E):</strong> ${E}</p>
+        <p style="color: #8e44ad;">${descriptions.E}</p>
+        <p style="color: #1abc9c;"><strong>Agreeableness (A):</strong> ${A}</p>
+        <p style="color: #16a085;">${descriptions.A}</p>
+        <p style="color: #f1c40f;"><strong>Neuroticism (N):</strong> ${N}</p>
+        <p style="color: #f39c12;">${descriptions.N}</p>
         `);
         });
     </script>
