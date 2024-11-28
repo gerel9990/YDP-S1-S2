@@ -53,7 +53,7 @@
             outline: none;
             box-shadow: 0 0 4px rgba(219, 158, 52, 0.8);
         }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 300px) {
             table {
                 display: block;
                 overflow-x: scroll;
